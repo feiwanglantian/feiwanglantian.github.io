@@ -113,7 +113,8 @@ header-img: "img/post-bg-rwd.jpg"
             repo: 'feiwanglantian.github.io',
             owner: 'feiwanglantian',
             admin: ['feiwanglantian'],
-            id: '页面的唯一标识，gitalk会根据这个标识自动创建的issue的标签',
+            id: 'window.location.pathname',
+            distractionFreeMode: true,
 
         });
     gitalk.render('gitalk-container');
