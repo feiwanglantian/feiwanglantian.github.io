@@ -1,13 +1,14 @@
 ---
-layout:     post                    # 使用的布局（不需要改）
-title:      My First Post               # 标题 
-subtitle:   Hello World, Hello Blog #副标题
-date:       2018-08-30              # 时间
-author:     LWC                      # 作者
-header-img: img/post-bg-2015.jpg    #这篇文章标题背景图片
-catalog: true                       # 是否归档
-tags:                               #标签
-    - 生活
+layout:     post
+title:      hi,欢迎来到文超的博客
+subtitle:   我的第一篇博客
+date:       2017-01-06
+author:     BY
+header-img: img/post-bg-ios9-web.jpg
+catalog: true
+tags:
+    - test
 ---
-## Hey
->这是我的第一篇博客。
+# 前言
+
+>这个我的第一篇博客
