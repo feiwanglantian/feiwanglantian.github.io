@@ -1,4 +1,4 @@
-###一、spring boot嵌入式servlet容器运行原理:
+### 一、spring boot嵌入式servlet容器运行原理:
 
 ##### 1）SpringBoot应用启动时运行主程序的run方法。
 
@@ -129,21 +129,21 @@ EmbeddedServletContainerFactory containerFactory = getEmbeddedServletContainerFa
 先创建IOC容器，同时创建嵌入式的Servlet容器，之后在去创建IOC容器的剩下的步骤，将自己写的类扫到容器中
 ```
 
-###二、spring boot使用外部servlet容器运行原理:
-####1>servlet3.0之后增加了如下的规则：
-###1）服务器启动（web应用启动）时会找在当前web应用里面每一个jar包里面找到ServletContainerInitializer实例：
-###2）ServletContainerInitializer的实现放在jar包的META-INF/services文件夹下，有一个名为javax.servlet.ServletContainerInitializer的文件，内容就是ServletContainerInitializer的实现类的全类名使用@HandlesTypes，在应用启动的时候加载我们感兴趣的类；
-####2>原理:
-#####1）首先启动tomcat容器
-#####2）在Spring的web模块中有这个文件：
+### 二、spring boot使用外部servlet容器运行原理:
+#### 1>servlet3.0之后增加了如下的规则：
+### 1）服务器启动（web应用启动）时会找在当前web应用里面每一个jar包里面找到ServletContainerInitializer实例：
+### 2）ServletContainerInitializer的实现放在jar包的META-INF/services文件夹下，有一个名为javax.servlet.ServletContainerInitializer的文件，内容就是ServletContainerInitializer的实现类的全类名使用@HandlesTypes，在应用启动的时候加载我们感兴趣的类；
+#### 2>原理:
+##### 1）首先启动tomcat容器
+##### 2）在Spring的web模块中有这个文件：
 ```java
 org\springframework\spring-web\4.3.14.RELEASE\spring-web-4.3.14.RELEASE.jar!\METAINF\services\javax.servlet.ServletContainerInitializer：
 其中这个文件中有org.springframework.web.SpringServletContainerInitializer这个类
 ```
-#####3）SpringServletContainerInitializer将@HandlesTypes(WebApplicationInitializer.class)标注的所有这个类型的类都传入到onStartup方法的Set>；为这些WebApplicationInitializer类型的类创建实例；而WebApplicationInitializer的实现类如下图所示：
+##### 3）SpringServletContainerInitializer将@HandlesTypes(WebApplicationInitializer.class)标注的所有这个类型的类都传入到onStartup方法的Set>；为这些WebApplicationInitializer类型的类创建实例；而WebApplicationInitializer的实现类如下图所示：
 ![](/img/2.png)
-#####4）每一个WebApplicationInitializer都调用自己的onStartup；等同于创建一个SpringBootServletInitializer类的对象，并执行onStartup方法
-#####5）SpringBootServletInitializer实例执行onStartup的时候会调用createRootApplicationContext方法创建容器
+##### 4）每一个WebApplicationInitializer都调用自己的onStartup；等同于创建一个SpringBootServletInitializer类的对象，并执行onStartup方法
+##### 5）SpringBootServletInitializer实例执行onStartup的时候会调用createRootApplicationContext方法创建容器
 ```java
 protected WebApplicationContext createRootApplicationContext(
 			ServletContext servletContext) {
@@ -181,7 +181,7 @@ protected WebApplicationContext createRootApplicationContext(
 	}
 ```
 
-#####6）上段代码最后一行调用run()方法，在此方法中再次调用了SpringApplication的run()方法，后续流程，除了不去创建嵌入式tomcat容器外，会创建ioc容器，具体步骤参考上面嵌入式servlet容器运行原理的(2)-(4)，创建过程中不会在调用(4)的onrefresh()方法了。
+##### 6）上段代码最后一行调用run()方法，在此方法中再次调用了SpringApplication的run()方法，后续流程，除了不去创建嵌入式tomcat容器外，会创建ioc容器，具体步骤参考上面嵌入式servlet容器运行原理的(2)-(4)，创建过程中不会在调用(4)的onrefresh()方法了。
 
 ```wiki
 总结:先启动Servlet容器，再启动SpringBoot应用
