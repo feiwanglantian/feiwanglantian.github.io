@@ -93,13 +93,14 @@ layout: default
                 <script src="{{ site.baseurl }}/js/md5.min.js"></script>
                 <script type="text/javascript">
                     var gitalk = new Gitalk({
-                    clientID: '{{site.gitalk.clientID}}',
-                    clientSecret: '{{site.gitalk.clientSecret}}',
-                    repo: '{{site.gitalk.repo}}',
-                    owner: '{{site.gitalk.owner}}',
-                    admin: ['{{site.gitalk.admin}}'],
-                    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
-                    id: md5(location.pathname),
+                        // gitalk的主要参数
+                        clientID: '76d9a002738a5512a76e',
+                        clientSecret: '6bd839845db973fc7102019a50598d72d876029c',
+                        repo: 'feiwanglantian.github.io',
+                        owner: 'feiwanglantian',
+                        admin: ['feiwanglantian'],
+                        id: 'window.location.pathname',
+                        distractionFreeMode: true,
                     });
                     gitalk.render('gitalk-container');
                 </script>
