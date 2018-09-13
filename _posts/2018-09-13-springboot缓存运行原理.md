@@ -1,3 +1,14 @@
+---
+layout:     post
+title:      springboot缓存运行原理
+subtitle:   springboot缓存运行原理
+date:       2018-09-13
+author:     BY
+header-img: img/post-bg-debug.jpg
+catalog: true
+tags:
+    - springboot
+---
 ### 一、spring boot缓存原理:
 #### 1、自动配置类:CacheAutoConfiguration，类中导入了缓存配置类：![](/img/CacheAutoConfiguration.png)
 

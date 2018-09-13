@@ -1,3 +1,14 @@
+---
+layout:     post
+title:      springboot运行原理
+subtitle:   springboot运行原理
+date:       2018-08-30
+author:     LIWC
+header-img: img/post-bg-debug.jpg
+catalog: true
+tags:
+    - springboot
+---
 ### 一、spring boot嵌入式servlet容器运行原理:
 
 ##### 1）SpringBoot应用启动时运行主程序的run方法。
