@@ -16,6 +16,7 @@ tags:
 #### 2、当容器中配置了哪个缓存组件进去，那个缓存的配置类就会被注入，默认SimpleCacheConfiguation会被匹配上。
 
 #### 3、SimpleCacheConfiguation向容器中注册了一个CacheManager:ConcurrentMapCacheManager
+#### 当redis配置进来后，默认的RedisCacheManager会被注入进来，而默认的ConcurrentMapCacheManager会失效。  
 
 #### 4、getCache（）方法可以获取和创建ConcurrentMapCache缓存组件  ConcurrentMapCache的作用是将数据保存到ConcurrentMap中，spring boot默认将数据保存到ConcurrentMap中，作为缓存。
 
