@@ -99,7 +99,7 @@ EmbeddedServletContainerFactory containerFactory = getEmbeddedServletContainerFa
 ```
 ###### 从ioc容器中获取EmbeddedServletContainerFactory组件,并创建子类的TomcatEmbeddedServletContainerFactory创建对象，后置处理器一看是这个对象，就获取所有的定制器来先定制Servlet容器的相关配置；
 
-![](/img/1.png)
+![](/Users/apple/Desktop/要看的/博客/feiwanglantian.github.io/img/1.png)
 
 ##### 7)使用容器工厂获取嵌入式的Servlet容器:this.embeddedServletContainer = containerFactory.getEmbeddedServletContainer(getSelfInitializer());
 ```java
@@ -141,7 +141,7 @@ org\springframework\spring-web\4.3.14.RELEASE\spring-web-4.3.14.RELEASE.jar!\MET
 其中这个文件中有org.springframework.web.SpringServletContainerInitializer这个类
 ```
 ##### 3）SpringServletContainerInitializer将@HandlesTypes(WebApplicationInitializer.class)标注的所有这个类型的类都传入到onStartup方法的Set>；为这些WebApplicationInitializer类型的类创建实例；而WebApplicationInitializer的实现类如下图所示：
-![](/img/2.png)
+![](/Users/apple/Desktop/要看的/博客/feiwanglantian.github.io/img/2.png)
 ##### 4）每一个WebApplicationInitializer都调用自己的onStartup；等同于创建一个SpringBootServletInitializer类的对象，并执行onStartup方法
 ##### 5）SpringBootServletInitializer实例执行onStartup的时候会调用createRootApplicationContext方法创建容器
 ```java
