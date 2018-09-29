@@ -4,7 +4,7 @@ title:      springboot运行原理
 subtitle:   springboot运行原理
 date:       2018-08-30
 author:     LIWC
-header-img: img/post-bg-debug.jpg
+header-img: img/post-bg-desk.jpg
 catalog: true
 tags:
     - springboot
