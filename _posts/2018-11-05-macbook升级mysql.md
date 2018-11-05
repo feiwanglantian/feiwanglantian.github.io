@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      mysql
+title:      mac升级mysql
 subtitle:   mysql
 date:       2018-11-05
 author:     BY
@@ -10,6 +10,7 @@ tags:
     - mysql
 ---
 ## mac升级mysql
+本文转载自http://www.mumayi.com/jiaocheng-20170704-12235.html，如有侵权，请联系删除。
 ### 1、首先停止Mysql服务
 ```
 sudo /usr/local/mysql/support-files/mysql.server stop
