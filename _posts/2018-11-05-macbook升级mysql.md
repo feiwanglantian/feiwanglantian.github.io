@@ -3,7 +3,7 @@ layout:     post
 title:      mac升级mysql
 subtitle:   mysql
 date:       2018-11-05
-author:     BY
+author:     LIWC
 header-img: img/post-bg-desk.jpg
 catalog: true
 tags:

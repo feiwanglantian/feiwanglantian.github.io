@@ -128,7 +128,7 @@ tags:
 
 重启，即可看到访问的 `kibana`已汉化。
 
-![img](https:////upload-images.jianshu.io/upload_images/15384793-123a5b69a6c49a20?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![img](E:\liwc\feiwanglantian.github.io\img\elk1.webp)
 
 
 
@@ -190,29 +190,29 @@ tags:
 
 - 创建索引
 
-![img](https:////upload-images.jianshu.io/upload_images/15384793-be372fc0c97365ec?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![img](E:\liwc\feiwanglantian.github.io\img\elk2.webp)
 
 
 
-![img](https:////upload-images.jianshu.io/upload_images/15384793-71f445d7993d260f?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![img](E:\liwc\feiwanglantian.github.io\img\elk3.webp)
 
 
 
-![img](https:////upload-images.jianshu.io/upload_images/15384793-5286a998f482797c?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![img](E:\liwc\feiwanglantian.github.io\img\elk4.webp)
 
 
 
-![img](https:////upload-images.jianshu.io/upload_images/15384793-831bd34e6c88ab2f?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![img](E:\liwc\feiwanglantian.github.io\img\elk5.webp)
 
 
 
 - 查看日志收集
 
-![img](https:////upload-images.jianshu.io/upload_images/15384793-f95781490002d5f5?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![img](E:\liwc\feiwanglantian.github.io\img\elk6.webp)
 
 ### 六、总结
 
-
+当spring boot启动日志特别多的时候，我们可以使用elk的方式来查看日志，避免查看.out文件时间过长，导致无法快速定位问题。
 
 ### 本文转载于简书
 
