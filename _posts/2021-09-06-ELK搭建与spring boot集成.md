@@ -208,7 +208,7 @@ tags:
 
 - 查看日志收集
 
-![img](/img/elk5.jpg)
+![img](/img/elk6.jpg)
 
 ### 六、总结
 
