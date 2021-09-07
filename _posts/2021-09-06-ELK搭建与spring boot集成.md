@@ -190,25 +190,25 @@ tags:
 
 - 创建索引
 
-![img](E:\liwc\feiwanglantian.github.io\img\elk2.webp)
+![img](/img/elk2.jpg)
 
 
 
-![img](E:\liwc\feiwanglantian.github.io\img\elk3.webp)
+!![img](/img/elk3.jpg)
 
 
 
-![img](E:\liwc\feiwanglantian.github.io\img\elk4.webp)
+![img](/img/elk4.jpg)
 
 
 
-![img](E:\liwc\feiwanglantian.github.io\img\elk5.webp)
+![img](/img/elk5.jpg)
 
 
 
 - 查看日志收集
 
-![img](E:\liwc\feiwanglantian.github.io\img\elk6.webp)
+![img](/img/elk5.jpg)
 
 ### 六、总结
 
