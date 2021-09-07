@@ -128,7 +128,7 @@ tags:
 
 重启，即可看到访问的 `kibana`已汉化。
 
-![img](E:\liwc\feiwanglantian.github.io\img\elk1.webp)
+![](/img/elk1.jpg)
 
 
 
