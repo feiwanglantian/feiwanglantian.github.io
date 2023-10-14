@@ -1,5 +1,14 @@
-#### 服务器后端项目日志报500 Internal Server Error错误，但是日志里面没有报错信息的解决方法
-
+---
+layout:     post
+title:      服务器后端项目日志报500 Internal Server Error错误，但是日志里面没有报错信息的解决方法
+subtitle:   服务器后端项目日志报500 Internal Server Error错误，但是日志里面没有报错信息的解决方法
+date:       2023-10-14
+author:     LIWC
+header-img: img/post-bg-desk.jpg
+catalog: true
+tags:
+    - 服务器（线上环境）
+---
 ##### 接客户反馈，公司一个正在运行的项目中某些页面会有错误，但是没有错误信息，通过查看network发现，nginx报500 Internal Server Error错误，查看nginx日志发现，日志中含有大量的 socket() failed (24: Too many open files) while connecting to upstream错误信息，如下图所示：
 
 ![3](https://liwc-1309754561.cos.ap-beijing.myqcloud.com/3.png)
