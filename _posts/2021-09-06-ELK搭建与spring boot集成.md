@@ -128,7 +128,7 @@ tags:
 
 重启，即可看到访问的 `kibana`已汉化。
 
-![](/img/elk1.jpg)
+![](https://liwc-1309754561.cos.ap-beijing.myqcloud.com/elk1.png)
 
 
 
@@ -190,25 +190,25 @@ tags:
 
 - 创建索引
 
-![img](/img/elk2.jpg)
+![img](https://liwc-1309754561.cos.ap-beijing.myqcloud.com/elk2.jpg)
 
 
 
-!![img](/img/elk3.jpg)
+!![img](https://liwc-1309754561.cos.ap-beijing.myqcloud.com/elk3.jpg)
 
 
 
-![img](/img/elk4.jpg)
+![img](https://liwc-1309754561.cos.ap-beijing.myqcloud.com/elk4.jpg)
 
 
 
-![img](/img/elk5.jpg)
+![img](https://liwc-1309754561.cos.ap-beijing.myqcloud.com/elk5.jpg)
 
 
 
 - 查看日志收集
 
-![img](/img/elk6.jpg)
+![img](https://liwc-1309754561.cos.ap-beijing.myqcloud.com/elk6.jpg)
 
 ### 六、总结
 

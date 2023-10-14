@@ -11,7 +11,7 @@ tags:
     - 缓存
 ---
 ### 一、spring boot缓存原理:
-#### 1、自动配置类:CacheAutoConfiguration，类中导入了缓存配置类：![](/img/CacheAutoConfiguration.png)
+#### 1、自动配置类:CacheAutoConfiguration，类中导入了缓存配置类：![](https://liwc-1309754561.cos.ap-beijing.myqcloud.com/CacheAutoConfiguration.png)
 
 #### 2、当容器中配置了哪个缓存组件进去，那个缓存的配置类就会被注入，默认SimpleCacheConfiguation会被匹配上。
 
